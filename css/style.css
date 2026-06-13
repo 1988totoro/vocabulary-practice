@@ -24,9 +24,27 @@ header {
   position: relative;
 }
 
+.title-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   margin: 0;
   font-size: 40px;
+}
+
+.copyright-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #f4c542;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.copyright-link:hover {
+  text-decoration: underline;
 }
 
 .speed-control {
@@ -137,6 +155,29 @@ button {
   gap: 14px;
 }
 
+.site-footer {
+  margin-top: 40px;
+  padding: 30px 20px;
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.site-footer p {
+  margin: 8px 0;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  color: #f4c542;
+}
+
 @media (max-width: 700px) {
   header {
     padding: 18px 12px;
@@ -184,27 +225,4 @@ button {
   .pagination {
     flex-wrap: wrap;
   }
-}
-
-.site-footer {
-  margin-top: 40px;
-  padding: 30px 20px;
-  background: #222;
-  color: #ccc;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.site-footer p {
-  margin: 8px 0;
-}
-
-.site-footer a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.site-footer a:hover {
-  color: #f4c542;
 }
