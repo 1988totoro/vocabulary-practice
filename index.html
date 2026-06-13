@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vocabulary Practice</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Vocabulary Practice</h1>
+
+      <label class="speed-control">
+        Speed:
+        <select id="speedSelect">
+          <option value="0.4" selected>Very Slow</option>
+          <option value="0.7">Slow</option>
+          <option value="1">Normal</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <select id="bookFilter">
+        <option value="">All Books</option>
+      </select>
+
+      <select id="unitFilter">
+        <option value="">All Units</option>
+      </select>
+
+      <input id="searchInput" type="text" placeholder="Search word..." />
+
+      <button id="favoritesBtn">⭐ Favorites</button>
+      <button id="randomBtn">🎲 Random</button>
+      <button id="clearBtn">Clear Filters</button>
+    </section>
+
+    <section id="wordList" class="word-list"></section>
+
+    <section class="pagination">
+      <button id="prevPage">Previous</button>
+      <span id="pageInfo">Page 1</span>
+      <button id="nextPage">Next</button>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+[
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 1,
+    "unitTitle": "All about me",
+    "file": "data/book3/level3-unit1.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 2,
+    "unitTitle": "Memory",
+    "file": "data/book3/level3-unit2.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 3,
+    "unitTitle": "Food for thought",
+    "file": "data/book3/level3-unit3.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 4,
+    "unitTitle": "Goals and ambition",
+    "file": "data/book3/level3-unit4.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 5,
+    "unitTitle": "Home and away",
+    "file": "data/book3/level3-unit5.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 6,
+    "file": "data/book3/level3-unit6.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 7,
+    "file": "data/book3/level3-unit7.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 8,
+    "file": "data/book3/level3-unit8.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 9,
+    "file": "data/book3/level3-unit9.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 10,
+    "file": "data/book3/level3-unit10.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 11,
+    "file": "data/book3/level3-unit11.json"
+  },
+  {
+    "book": "Learning Level 3",
+    "level": 3,
+    "unit": 12,
+    "file": "data/book3/level3-unit12.json"
+  }
+]
