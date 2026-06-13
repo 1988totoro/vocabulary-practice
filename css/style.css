@@ -185,3 +185,26 @@ button {
     flex-wrap: wrap;
   }
 }
+
+.site-footer {
+  margin-top: 40px;
+  padding: 30px 20px;
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.site-footer p {
+  margin: 8px 0;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  color: #f4c542;
+}
