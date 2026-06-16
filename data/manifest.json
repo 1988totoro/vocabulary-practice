@@ -180,5 +180,19 @@
     "unit": "Travel",
     "unitTitle": "Travel",
     "file": "data/daily/daily-travel.json"
+  },
+  {
+    "book": "Verb Forms",
+    "level": "Verb Forms",
+    "unit": "Regular Verbs",
+    "unitTitle": "Regular Verbs",
+    "file": "data/verb-forms/regular-verbs.json"
+  },
+  {
+    "book": "Verb Forms",
+    "level": "Verb Forms",
+    "unit": "Irregular Verbs",
+    "unitTitle": "Irregular Verbs",
+    "file": "data/verb-forms/irregular-verbs.json"
   }
 ]

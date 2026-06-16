@@ -31,19 +31,28 @@
 
   <main>
     <section class="controls">
-      <select id="bookFilter">
-        <option value="">All Books</option>
-      </select>
+      <div class="filter-row">
+        <select id="bookFilter">
+          <option value="">All Books</option>
+        </select>
 
-      <select id="unitFilter">
-        <option value="">All Units</option>
-      </select>
+        <select id="unitFilter">
+          <option value="">All Categories</option>
+        </select>
 
-      <input id="searchInput" type="text" placeholder="Search word..." />
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search word..."
+        />
+      </div>
 
-      <button id="favoritesBtn">⭐ Favorites</button>
-      <button id="randomBtn">🎲 Random</button>
-      <button id="clearBtn">Clear Filters</button>
+      <div class="button-row">
+        <button id="favoritesBtn">⭐ Favorites</button>
+        <button id="randomBtn">🎲 Random</button>
+        <button id="quizBtn">📝 Quiz</button>
+        <button id="clearBtn">Clear Filters</button>
+      </div>
     </section>
 
     <section id="wordList" class="word-list"></section>
@@ -79,7 +88,7 @@
       If you are the copyright holder and would like any content removed,
       please contact:
       <a href="mailto:shiu0912@gmail.com">
-        weiwei07796@gmail.com
+        shiu0912@gmail.com
       </a>
     </p>
   </footer>

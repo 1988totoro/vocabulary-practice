@@ -5,8 +5,10 @@ let manifestData = [];
 let currentPage = 1;
 let showFavoritesOnly = false;
 let isRandomMode = false;
+let isQuizMode = false;
 let randomHistory = [];
 let randomHistoryIndex = -1;
+let currentQuizAnswer = null;
 
 const wordsPerPage = 100;
 const favoritesKey = "vocabularyFavorites";
@@ -22,8 +24,13 @@ function saveFavorites(favorites) {
   localStorage.setItem(favoritesKey, JSON.stringify(favorites));
 }
 
-function isFavorite(wordId) {
-  return getFavorites().includes(wordId);
+function getFavoriteId(word) {
+  if (word.favoriteId) return word.favoriteId;
+  return `${word.book || "Book"}__${word.unit || "Unit"}__${word.id || word.word || "word"}`;
+}
+
+function isFavorite(word) {
+  return getFavorites().includes(getFavoriteId(word));
 }
 
 function toggleFavorite(wordId) {
@@ -76,7 +83,9 @@ async function loadData() {
           book: item.book,
           level: item.level,
           unit: item.unit,
-          unitTitle: item.unitTitle || item.unit
+          unitTitle: item.unitTitle || item.unit,
+          category: word.category || item.unitTitle || item.unit,
+          favoriteId: `${item.book}__${item.unit}__${word.id || word.word || word.past || word.pp}`
         }));
       })
     );
@@ -120,7 +129,18 @@ function populateUnitFilter() {
   const unitFilter = document.getElementById("unitFilter");
   const selectedBook = document.getElementById("bookFilter").value;
 
-  unitFilter.innerHTML = `<option value="">All Units / Topics</option>`;
+  unitFilter.innerHTML = `<option value="">All Categories</option>`;
+
+  if (selectedBook === "Verb Forms") {
+    ["All Verbs", "Regular Verbs", "Irregular Verbs"].forEach((label, index) => {
+      if (index === 0) return;
+      const option = document.createElement("option");
+      option.value = label;
+      option.textContent = label;
+      unitFilter.appendChild(option);
+    });
+    return;
+  }
 
   const units = manifestData.filter(item => {
     return !selectedBook || item.book === selectedBook;
@@ -144,10 +164,15 @@ function populateUnitFilter() {
 }
 
 function createWordCard(word) {
+  if (word.book === "Verb Forms") {
+    return createVerbFormCard(word);
+  }
+
   const card = document.createElement("div");
   card.className = "word-card";
 
-  const star = isFavorite(word.id)
+  const favoriteId = getFavoriteId(word);
+  const star = isFavorite(word)
     ? '<span style="color:#f4c542">★</span>'
     : '<span style="color:#999">☆</span>';
 
@@ -163,7 +188,7 @@ function createWordCard(word) {
         <div class="ipa">${word.ipa || ""}</div>
       </div>
 
-      <button class="favorite-star" onclick="toggleFavorite('${word.id}')">
+      <button class="favorite-star" onclick="toggleFavorite('${favoriteId}')">
         ${star}
       </button>
     </div>
@@ -186,8 +211,55 @@ function createWordCard(word) {
   return card;
 }
 
+function createVerbFormCard(word) {
+  const card = document.createElement("div");
+  card.className = "word-card verb-card";
+
+  const favoriteId = getFavoriteId(word);
+  const star = isFavorite(word)
+    ? '<span style="color:#f4c542">★</span>'
+    : '<span style="color:#999">☆</span>';
+
+  const safeSpeak1 = escapeForSpeech(word.speak1 || word.word || "");
+  const safeSpeak2 = escapeForSpeech(word.speak2 || word.past || "");
+  const safeSpeak3 = escapeForSpeech(word.speak3 || word.pp || "");
+
+  card.innerHTML = `
+    <div class="verb-row">
+      <div class="verb-sound-cell">
+        <button class="verb-sound-btn" onclick="speakVerbForms('${safeSpeak1}', '${safeSpeak2}', '${safeSpeak3}')">🔊</button>
+      </div>
+
+      <div class="verb-cell">
+        <div class="verb-label">Base Form</div>
+        <div class="verb-word">${word.word || ""}</div>
+        <div class="ipa">${word.ipa1 || ""}</div>
+      </div>
+
+      <div class="verb-cell">
+        <div class="verb-label">Past Simple</div>
+        <div class="verb-word">${word.past || ""}</div>
+        <div class="ipa">${word.ipa2 || ""}</div>
+      </div>
+
+      <div class="verb-cell">
+        <div class="verb-label">Past Participle</div>
+        <div class="verb-word">${word.pp || ""}</div>
+        <div class="ipa">${word.ipa3 || ""}</div>
+      </div>
+
+      <div class="verb-favorite-cell">
+        <button class="favorite-star" onclick="toggleFavorite('${favoriteId}')">${star}</button>
+      </div>
+    </div>
+  `;
+
+  return card;
+}
+
 function renderWords() {
   isRandomMode = false;
+  isQuizMode = false;
   wordList.innerHTML = "";
 
   if (filteredWords.length === 0) {
@@ -212,6 +284,23 @@ function renderWords() {
   pageInfo.textContent = `Page ${currentPage} / ${totalPages}`;
 }
 
+function getSearchText(word) {
+  return [
+    word.word,
+    word.past,
+    word.pp,
+    word.ipa,
+    word.ipa1,
+    word.ipa2,
+    word.ipa3,
+    word.partOfSpeech,
+    word.definition,
+    word.example,
+    word.example2,
+    word.example3
+  ].filter(Boolean).join(" ").toLowerCase();
+}
+
 function applyFilters() {
   const searchText = document
     .getElementById("searchInput")
@@ -226,7 +315,7 @@ function applyFilters() {
   filteredWords = allWords.filter(word => {
     const matchSearch =
       !searchText ||
-      (word.word || "").toLowerCase().includes(searchText);
+      getSearchText(word).includes(searchText);
 
     const matchBook =
       !selectedBook ||
@@ -234,18 +323,25 @@ function applyFilters() {
 
     const matchUnit =
       !selectedUnit ||
-      String(word.unit) === String(selectedUnit);
+      (word.book === "Verb Forms"
+        ? word.category === selectedUnit
+        : String(word.unit) === String(selectedUnit));
 
     const matchFavorite =
       !showFavoritesOnly ||
-      favorites.includes(word.id);
+      favorites.includes(getFavoriteId(word));
 
     return matchSearch && matchBook && matchUnit && matchFavorite;
+  });
+
+  filteredWords.sort((a, b) => {
+    return String(a.word || "").localeCompare(String(b.word || ""));
   });
 
   currentPage = 1;
   randomHistory = [];
   randomHistoryIndex = -1;
+  isQuizMode = false;
 
   renderWords();
 }
@@ -264,6 +360,7 @@ function showRandomWord() {
   }
 
   isRandomMode = true;
+  isQuizMode = false;
 
   const randomIndex = Math.floor(Math.random() * filteredWords.length);
   const randomWord = filteredWords[randomIndex];
@@ -280,7 +377,7 @@ function renderRandomWord(word) {
   wordList.appendChild(createWordCard(word));
 
   const selectedUnit = document.getElementById("unitFilter").value;
-  const unitText = selectedUnit ? selectedUnit : "All Units / Topics";
+  const unitText = selectedUnit ? selectedUnit : "All Categories";
 
   pageInfo.textContent =
     `🎲 Random Mode | ${unitText} | ${filteredWords.length} word(s) available`;
@@ -300,7 +397,7 @@ function applyRandomFilterOnly() {
   filteredWords = allWords.filter(word => {
     const matchSearch =
       !searchText ||
-      (word.word || "").toLowerCase().includes(searchText);
+      getSearchText(word).includes(searchText);
 
     const matchBook =
       !selectedBook ||
@@ -308,18 +405,26 @@ function applyRandomFilterOnly() {
 
     const matchUnit =
       !selectedUnit ||
-      String(word.unit) === String(selectedUnit);
+      (word.book === "Verb Forms"
+        ? word.category === selectedUnit
+        : String(word.unit) === String(selectedUnit));
 
     const matchFavorite =
       !showFavoritesOnly ||
-      favorites.includes(word.id);
+      favorites.includes(getFavoriteId(word));
 
     return matchSearch && matchBook && matchUnit && matchFavorite;
+  });
+
+  filteredWords.sort((a, b) => {
+    return String(a.word || "").localeCompare(String(b.word || ""));
   });
 }
 
 function renderCurrentView() {
-  if (isRandomMode && randomHistory[randomHistoryIndex]) {
+  if (isQuizMode) {
+    showQuizQuestion();
+  } else if (isRandomMode && randomHistory[randomHistoryIndex]) {
     renderRandomWord(randomHistory[randomHistoryIndex]);
   } else {
     renderWords();
@@ -345,6 +450,140 @@ function speakText(text) {
   speechSynthesis.speak(utterance);
 }
 
+function speakWithPause(texts, index = 0) {
+  if (index >= texts.length) return;
+
+  const speed = Number(document.getElementById("speedSelect").value);
+  const utterance = new SpeechSynthesisUtterance(texts[index]);
+  utterance.lang = "en-US";
+  utterance.rate = speed;
+
+  utterance.onend = () => {
+    setTimeout(() => speakWithPause(texts, index + 1), 100);
+  };
+
+  speechSynthesis.speak(utterance);
+}
+
+function speakVerbForms(base, past, pp) {
+  speechSynthesis.cancel();
+  speakWithPause([base, past, pp]);
+}
+
+function startQuizMode() {
+  document.getElementById("bookFilter").value = "Verb Forms";
+  populateUnitFilter();
+  applyRandomFilterOnly();
+
+  isQuizMode = true;
+  isRandomMode = false;
+  showQuizQuestion();
+}
+
+function showQuizQuestion() {
+  applyRandomFilterOnly();
+
+  const quizWords = filteredWords.filter(word => word.book === "Verb Forms");
+
+  if (quizWords.length === 0) {
+    wordList.innerHTML = `
+      <div class="word-card">
+        <strong>No verb forms available for quiz.</strong>
+      </div>
+    `;
+    pageInfo.textContent = "📝 Quiz Mode";
+    return;
+  }
+
+  const word = quizWords[Math.floor(Math.random() * quizWords.length)];
+  const quizTypes = ["base", "past", "pp"];
+  const quizType = quizTypes[Math.floor(Math.random() * quizTypes.length)];
+
+  let questionHtml = "";
+  let answer = {};
+
+  if (quizType === "base") {
+    questionHtml = `
+      <div class="quiz-given">${word.word} <span>${word.ipa1 || ""}</span></div>
+      <label>Past Simple</label>
+      <input id="quizAnswer1" type="text" autocomplete="off" />
+      <label>Past Participle</label>
+      <input id="quizAnswer2" type="text" autocomplete="off" />
+    `;
+    answer = { first: word.past, second: word.pp };
+  }
+
+  if (quizType === "past") {
+    questionHtml = `
+      <div class="quiz-given">${word.past} <span>${word.ipa2 || ""}</span></div>
+      <label>Base Form</label>
+      <input id="quizAnswer1" type="text" autocomplete="off" />
+      <label>Past Participle</label>
+      <input id="quizAnswer2" type="text" autocomplete="off" />
+    `;
+    answer = { first: word.word, second: word.pp };
+  }
+
+  if (quizType === "pp") {
+    questionHtml = `
+      <div class="quiz-given">${word.pp} <span>${word.ipa3 || ""}</span></div>
+      <label>Base Form</label>
+      <input id="quizAnswer1" type="text" autocomplete="off" />
+      <label>Past Simple</label>
+      <input id="quizAnswer2" type="text" autocomplete="off" />
+    `;
+    answer = { first: word.word, second: word.past };
+  }
+
+  currentQuizAnswer = { ...answer, word };
+
+  wordList.innerHTML = `
+    <div class="word-card quiz-card">
+      <h2>Verb Forms Quiz</h2>
+      ${questionHtml}
+      <div class="card-buttons quiz-buttons">
+        <button onclick="checkQuizAnswer()">Check</button>
+        <button onclick="showQuizQuestion()">Next Question</button>
+        <button onclick="speakVerbForms('${escapeForSpeech(word.speak1 || word.word)}', '${escapeForSpeech(word.speak2 || word.past)}', '${escapeForSpeech(word.speak3 || word.pp)}')">🔊 Pronounce</button>
+      </div>
+      <div id="quizResult" class="quiz-result"></div>
+    </div>
+  `;
+
+  pageInfo.textContent = `📝 Quiz Mode | ${quizWords.length} verb(s) available`;
+}
+
+function normalizeAnswer(text) {
+  return String(text || "").toLowerCase().trim();
+}
+
+function checkQuizAnswer() {
+  if (!currentQuizAnswer) return;
+
+  const userAnswer1 = normalizeAnswer(document.getElementById("quizAnswer1").value);
+  const userAnswer2 = normalizeAnswer(document.getElementById("quizAnswer2").value);
+
+  const correct1 = normalizeAnswer(currentQuizAnswer.first);
+  const correct2 = normalizeAnswer(currentQuizAnswer.second);
+
+  const isCorrect1 = userAnswer1 === correct1;
+  const isCorrect2 = userAnswer2 === correct2;
+
+  const result = document.getElementById("quizResult");
+
+  if (isCorrect1 && isCorrect2) {
+    result.innerHTML = `<strong class="correct">Correct!</strong>`;
+  } else {
+    result.innerHTML = `
+      <strong class="wrong">Try again.</strong>
+      <div>Correct answer:</div>
+      <div>${currentQuizAnswer.word.word} ${currentQuizAnswer.word.ipa1 || ""}</div>
+      <div>${currentQuizAnswer.word.past} ${currentQuizAnswer.word.ipa2 || ""}</div>
+      <div>${currentQuizAnswer.word.pp} ${currentQuizAnswer.word.ipa3 || ""}</div>
+    `;
+  }
+}
+
 document.getElementById("searchInput").addEventListener("input", applyFilters);
 
 document.getElementById("bookFilter").addEventListener("change", () => {
@@ -362,6 +601,7 @@ document.getElementById("favoritesBtn").addEventListener("click", () => {
 });
 
 document.getElementById("randomBtn").addEventListener("click", showRandomWord);
+document.getElementById("quizBtn").addEventListener("click", startQuizMode);
 
 document.getElementById("clearBtn").addEventListener("click", () => {
   document.getElementById("searchInput").value = "";
@@ -370,6 +610,7 @@ document.getElementById("clearBtn").addEventListener("click", () => {
 
   showFavoritesOnly = false;
   isRandomMode = false;
+  isQuizMode = false;
   randomHistory = [];
   randomHistoryIndex = -1;
 
@@ -382,6 +623,11 @@ document.getElementById("clearBtn").addEventListener("click", () => {
 });
 
 document.getElementById("prevPage").addEventListener("click", () => {
+  if (isQuizMode) {
+    showQuizQuestion();
+    return;
+  }
+
   if (isRandomMode) {
     if (randomHistoryIndex > 0) {
       randomHistoryIndex--;
@@ -397,6 +643,11 @@ document.getElementById("prevPage").addEventListener("click", () => {
 });
 
 document.getElementById("nextPage").addEventListener("click", () => {
+  if (isQuizMode) {
+    showQuizQuestion();
+    return;
+  }
+
   if (isRandomMode) {
     showRandomWord();
     return;

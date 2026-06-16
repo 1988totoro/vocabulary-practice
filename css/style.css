@@ -80,8 +80,24 @@ main {
 
 .controls {
   display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.filter-row,
+.button-row {
+  display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.filter-row select,
+.filter-row input {
+  min-height: 52px;
+}
+
+.button-row button {
+  min-width: 150px;
 }
 
 select,
@@ -238,5 +254,108 @@ button {
 
   .pagination {
     flex-wrap: wrap;
+  }
+}
+
+.verb-card {
+  padding: 16px;
+}
+
+.verb-row {
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr 1fr 70px;
+  gap: 14px;
+  align-items: center;
+}
+
+.verb-sound-cell,
+.verb-favorite-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verb-sound-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 0;
+}
+
+.verb-label {
+  color: #666;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.verb-word {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.quiz-card label {
+  display: block;
+  margin-top: 14px;
+  font-weight: bold;
+}
+
+.quiz-card input {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.quiz-given {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.quiz-given span {
+  font-size: 20px;
+  color: #555;
+  font-weight: normal;
+}
+
+.quiz-result {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.correct {
+  color: #1a7f37;
+}
+
+.wrong {
+  color: #b00020;
+}
+
+
+@media (max-width: 700px) {
+  .filter-row,
+  .button-row {
+    flex-direction: column;
+  }
+
+  .verb-row {
+    grid-template-columns: 56px 1fr 1fr 1fr 48px;
+    gap: 8px;
+    align-items: start;
+  }
+
+  .verb-sound-btn {
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+  }
+
+  .verb-label {
+    font-size: 12px;
+  }
+
+  .verb-word {
+    font-size: 20px;
   }
 }
