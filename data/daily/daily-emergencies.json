@@ -20,6 +20,7 @@
     "unit": 12,
     "unitTitle": "Emergencies",
     "word": "911",
+    "speak": "nine one one",
     "ipa": "/ˌnaɪn wʌn ˈwʌn/",
     "partOfSpeech": "noun",
     "definition": "the emergency phone number in Canada",
@@ -389,7 +390,8 @@
     "definition": "emergency treatment to help someone breathe and keep blood flowing",
     "example": "I may hear 'CPR' during an emergency.",
     "example2": "This word is important for safety.",
-    "example3": "People should understand 'CPR' in Canada."
+    "example3": "People should understand 'CPR' in Canada.",
+    "speak": "C P R"
   },
   {
     "id": "daily-emergencies-029",

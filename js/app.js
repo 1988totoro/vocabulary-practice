@@ -176,10 +176,10 @@ function createWordCard(word) {
     ? '<span style="color:#f4c542">★</span>'
     : '<span style="color:#999">☆</span>';
 
-  const safeWord = escapeForSpeech(word.word || "");
-  const safeExample1 = escapeForSpeech(word.example || "");
-  const safeExample2 = escapeForSpeech(word.example2 || "");
-  const safeExample3 = escapeForSpeech(word.example3 || "");
+  const safeWord = escapeForSpeech(word.speak || getSpeechText(word.word || ""));
+  const safeExample1 = escapeForSpeech(word.exampleSpeak || getSpeechText(word.example || ""));
+  const safeExample2 = escapeForSpeech(word.example2Speak || getSpeechText(word.example2 || ""));
+  const safeExample3 = escapeForSpeech(word.example3Speak || getSpeechText(word.example3 || ""));
 
   card.innerHTML = `
     <div class="word-header">
@@ -293,6 +293,10 @@ function getSearchText(word) {
     word.ipa1,
     word.ipa2,
     word.ipa3,
+    word.speak,
+    word.exampleSpeak,
+    word.example2Speak,
+    word.example3Speak,
     word.partOfSpeech,
     word.definition,
     word.example,
@@ -429,6 +433,29 @@ function renderCurrentView() {
   } else {
     renderWords();
   }
+}
+
+
+function getSpeechText(text) {
+  return String(text || "")
+    .replace(/\b911\b/g, "nine one one")
+    .replace(/\b9-1-1\b/g, "nine one one")
+    .replace(/\b24\/7\b/g, "twenty four seven")
+    .replace(/\b3D\b/g, "three D")
+    .replace(/\bA&W\b/g, "A and W")
+    .replace(/\bB\.C\.\b/g, "British Columbia")
+    .replace(/\bBC\b/g, "British Columbia")
+    .replace(/\be-transfer\b/gi, "E transfer")
+    .replace(/\bATM\b/g, "A T M")
+    .replace(/\bPIN\b/g, "pin")
+    .replace(/\bWi-Fi\b/gi, "Wi Fi")
+    .replace(/\bCOVID-19\b/gi, "COVID nineteen")
+    .replace(/\bX-ray\b/gi, "X ray")
+    .replace(/\bCPR\b/g, "C P R")
+    .replace(/\bESL\b/g, "E S L")
+    .replace(/\bTV\b/g, "T V")
+    .replace(/\bID\b/g, "I D")
+    .replace(/\bUV\b/g, "U V");
 }
 
 function escapeForSpeech(text) {
