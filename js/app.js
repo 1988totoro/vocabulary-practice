@@ -1,5 +1,7 @@
 let allWords = [];
 let filteredWords = [];
+let manifestData = [];
+
 let currentPage = 1;
 let showFavoritesOnly = false;
 let isRandomMode = false;
@@ -57,28 +59,36 @@ async function loadData() {
       throw new Error("Cannot load data/manifest.json");
     }
 
-    const manifest = await manifestResponse.json();
+    manifestData = await manifestResponse.json();
 
     const wordFiles = await Promise.all(
-      manifest.map(async item => {
+      manifestData.map(async item => {
         const response = await fetch(item.file);
 
         if (!response.ok) {
           throw new Error("Cannot load file: " + item.file);
         }
 
-        return response.json();
+        const words = await response.json();
+
+        return words.map(word => ({
+          ...word,
+          book: item.book,
+          level: item.level,
+          unit: item.unit,
+          unitTitle: item.unitTitle || item.unit
+        }));
       })
     );
 
     allWords = wordFiles.flat();
-
-    populateFilters(manifest);
-    updateFavoritesButton();
-
     filteredWords = [...allWords];
 
+    populateBookFilter();
+    populateUnitFilter();
+    updateFavoritesButton();
     renderWords();
+
   } catch (error) {
     console.error("Load Error:", error);
 
@@ -91,15 +101,12 @@ async function loadData() {
   }
 }
 
-function populateFilters(manifest) {
+function populateBookFilter() {
   const bookFilter = document.getElementById("bookFilter");
-  const unitFilter = document.getElementById("unitFilter");
 
   bookFilter.innerHTML = `<option value="">All Books</option>`;
-  unitFilter.innerHTML = `<option value="">All Units</option>`;
 
-  const books = [...new Set(manifest.map(item => item.book))];
-  const units = [...new Set(manifest.map(item => item.unit))];
+  const books = [...new Set(manifestData.map(item => item.book))];
 
   books.forEach(book => {
     const option = document.createElement("option");
@@ -107,11 +114,31 @@ function populateFilters(manifest) {
     option.textContent = book;
     bookFilter.appendChild(option);
   });
+}
 
-  units.forEach(unit => {
+function populateUnitFilter() {
+  const unitFilter = document.getElementById("unitFilter");
+  const selectedBook = document.getElementById("bookFilter").value;
+
+  unitFilter.innerHTML = `<option value="">All Units / Topics</option>`;
+
+  const units = manifestData.filter(item => {
+    return !selectedBook || item.book === selectedBook;
+  });
+
+  units.forEach(item => {
     const option = document.createElement("option");
-    option.value = unit;
-    option.textContent = `Unit ${unit}`;
+    option.value = String(item.unit);
+
+    if (item.book === "Daily English") {
+      option.textContent = item.unitTitle || item.unit;
+    } else {
+      option.textContent =
+        item.unitTitle && item.unitTitle !== `Unit ${item.unit}`
+          ? `Unit ${item.unit} - ${item.unitTitle}`
+          : `Unit ${item.unit}`;
+    }
+
     unitFilter.appendChild(option);
   });
 }
@@ -125,7 +152,9 @@ function createWordCard(word) {
     : '<span style="color:#999">☆</span>';
 
   const safeWord = escapeForSpeech(word.word || "");
-  const safeExample = escapeForSpeech(word.example || "");
+  const safeExample1 = escapeForSpeech(word.example || "");
+  const safeExample2 = escapeForSpeech(word.example2 || "");
+  const safeExample3 = escapeForSpeech(word.example3 || "");
 
   card.innerHTML = `
     <div class="word-header">
@@ -141,11 +170,16 @@ function createWordCard(word) {
 
     <div class="part-of-speech">${word.partOfSpeech || ""}</div>
     <div class="definition">${word.definition || ""}</div>
-    <div class="example">${word.example || ""}</div>
+
+    ${word.example ? `<div class="example">${word.example}</div>` : ""}
+    ${word.example2 ? `<div class="example">${word.example2}</div>` : ""}
+    ${word.example3 ? `<div class="example">${word.example3}</div>` : ""}
 
     <div class="card-buttons">
       <button onclick="speakText('${safeWord}')">🔊 Word</button>
-      <button onclick="speakText('${safeExample}')">🔊 Example</button>
+      ${word.example ? `<button onclick="speakText('${safeExample1}')">🔊 Ex 1</button>` : ""}
+      ${word.example2 ? `<button onclick="speakText('${safeExample2}')">🔊 Ex 2</button>` : ""}
+      ${word.example3 ? `<button onclick="speakText('${safeExample3}')">🔊 Ex 3</button>` : ""}
     </div>
   `;
 
@@ -200,7 +234,7 @@ function applyFilters() {
 
     const matchUnit =
       !selectedUnit ||
-      String(word.unit) === selectedUnit;
+      String(word.unit) === String(selectedUnit);
 
     const matchFavorite =
       !showFavoritesOnly ||
@@ -246,7 +280,7 @@ function renderRandomWord(word) {
   wordList.appendChild(createWordCard(word));
 
   const selectedUnit = document.getElementById("unitFilter").value;
-  const unitText = selectedUnit ? `Unit ${selectedUnit}` : "All Units";
+  const unitText = selectedUnit ? selectedUnit : "All Units / Topics";
 
   pageInfo.textContent =
     `🎲 Random Mode | ${unitText} | ${filteredWords.length} word(s) available`;
@@ -274,7 +308,7 @@ function applyRandomFilterOnly() {
 
     const matchUnit =
       !selectedUnit ||
-      String(word.unit) === selectedUnit;
+      String(word.unit) === String(selectedUnit);
 
     const matchFavorite =
       !showFavoritesOnly ||
@@ -296,6 +330,7 @@ function escapeForSpeech(text) {
   return String(text)
     .replace(/\\/g, "\\\\")
     .replace(/'/g, "\\'")
+    .replace(/"/g, '\\"')
     .replace(/\n/g, " ");
 }
 
@@ -311,7 +346,13 @@ function speakText(text) {
 }
 
 document.getElementById("searchInput").addEventListener("input", applyFilters);
-document.getElementById("bookFilter").addEventListener("change", applyFilters);
+
+document.getElementById("bookFilter").addEventListener("change", () => {
+  populateUnitFilter();
+  document.getElementById("unitFilter").value = "";
+  applyFilters();
+});
+
 document.getElementById("unitFilter").addEventListener("change", applyFilters);
 
 document.getElementById("favoritesBtn").addEventListener("click", () => {
@@ -332,6 +373,7 @@ document.getElementById("clearBtn").addEventListener("click", () => {
   randomHistory = [];
   randomHistoryIndex = -1;
 
+  populateUnitFilter();
   updateFavoritesButton();
 
   filteredWords = [...allWords];
