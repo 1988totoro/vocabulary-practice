@@ -359,3 +359,28 @@ button {
     font-size: 20px;
   }
 }
+
+.chinese-translation {
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: #f8f9fa;
+  border-left: 4px solid #f4c542;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.chinese-label {
+  font-weight: bold;
+  color: #555;
+  margin-right: 6px;
+}
+
+.word-card.playing-word {
+  background: #fff3a3;
+  border: 3px solid #f4c542;
+  box-shadow: 0 0 0 4px rgba(244, 197, 66, 0.25);
+}
+
+#stopPlayBtn {
+  background: #fff0f0;
+}

@@ -9,9 +9,15 @@ let isQuizMode = false;
 let randomHistory = [];
 let randomHistoryIndex = -1;
 let currentQuizAnswer = null;
+let globalChineseVisible = JSON.parse(localStorage.getItem("globalChineseVisible") || "false");
+let chineseOverrides = JSON.parse(localStorage.getItem("chineseVisibilityOverrides") || "{}");
+let playFilteredStopRequested = false;
+let currentPlayingWordId = null;
 
 const wordsPerPage = 100;
 const favoritesKey = "vocabularyFavorites";
+const globalChineseKey = "globalChineseVisible";
+const chineseOverridesKey = "chineseVisibilityOverrides";
 
 const wordList = document.getElementById("wordList");
 const pageInfo = document.getElementById("pageInfo");
@@ -22,6 +28,48 @@ function getFavorites() {
 
 function saveFavorites(favorites) {
   localStorage.setItem(favoritesKey, JSON.stringify(favorites));
+}
+
+
+function saveChineseSettings() {
+  localStorage.setItem(globalChineseKey, JSON.stringify(globalChineseVisible));
+  localStorage.setItem(chineseOverridesKey, JSON.stringify(chineseOverrides));
+}
+
+function isChineseVisible(word) {
+  if (!word.chinese) return false;
+  const wordId = getFavoriteId(word);
+
+  if (Object.prototype.hasOwnProperty.call(chineseOverrides, wordId)) {
+    return chineseOverrides[wordId];
+  }
+
+  return globalChineseVisible;
+}
+
+function setAllChineseVisibility(visible) {
+  globalChineseVisible = visible;
+  chineseOverrides = {};
+  saveChineseSettings();
+  renderCurrentView();
+}
+
+function toggleWordChinese(wordId) {
+  const word = allWords.find(item => getFavoriteId(item) === wordId);
+  if (!word || !word.chinese) return;
+
+  chineseOverrides[wordId] = !isChineseVisible(word);
+  saveChineseSettings();
+  renderCurrentView();
+}
+
+function escapeHtml(text) {
+  return String(text || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 function getFavoriteId(word) {
@@ -172,6 +220,10 @@ function createWordCard(word) {
   card.className = "word-card";
 
   const favoriteId = getFavoriteId(word);
+  card.dataset.wordId = favoriteId;
+  if (currentPlayingWordId === favoriteId) {
+    card.classList.add("playing-word");
+  }
   const star = isFavorite(word)
     ? '<span style="color:#f4c542">★</span>'
     : '<span style="color:#999">☆</span>';
@@ -180,6 +232,12 @@ function createWordCard(word) {
   const safeExample1 = escapeForSpeech(word.exampleSpeak || getSpeechText(word.example || ""));
   const safeExample2 = escapeForSpeech(word.example2Speak || getSpeechText(word.example2 || ""));
   const safeExample3 = escapeForSpeech(word.example3Speak || getSpeechText(word.example3 || ""));
+  const chineseVisible = isChineseVisible(word);
+  const chineseText = escapeHtml(word.chinese || "");
+  const chineseButtonText = chineseVisible ? "隱藏中文" : "顯示中文";
+  const chineseHtml = word.chinese && chineseVisible
+    ? `<div class="chinese-translation"><span class="chinese-label">中文：</span>${chineseText}</div>`
+    : "";
 
   card.innerHTML = `
     <div class="word-header">
@@ -195,6 +253,7 @@ function createWordCard(word) {
 
     <div class="part-of-speech">${word.partOfSpeech || ""}</div>
     <div class="definition">${word.definition || ""}</div>
+    ${chineseHtml}
 
     ${word.example ? `<div class="example">${word.example}</div>` : ""}
     ${word.example2 ? `<div class="example">${word.example2}</div>` : ""}
@@ -202,6 +261,7 @@ function createWordCard(word) {
 
     <div class="card-buttons">
       <button onclick="speakText('${safeWord}')">🔊 Word</button>
+      ${word.chinese ? `<button onclick="toggleWordChinese('${favoriteId}')">${chineseButtonText}</button>` : ""}
       ${word.example ? `<button onclick="speakText('${safeExample1}')">🔊 Ex 1</button>` : ""}
       ${word.example2 ? `<button onclick="speakText('${safeExample2}')">🔊 Ex 2</button>` : ""}
       ${word.example3 ? `<button onclick="speakText('${safeExample3}')">🔊 Ex 3</button>` : ""}
@@ -216,6 +276,10 @@ function createVerbFormCard(word) {
   card.className = "word-card verb-card";
 
   const favoriteId = getFavoriteId(word);
+  card.dataset.wordId = favoriteId;
+  if (currentPlayingWordId === favoriteId) {
+    card.classList.add("playing-word");
+  }
   const star = isFavorite(word)
     ? '<span style="color:#f4c542">★</span>'
     : '<span style="color:#999">☆</span>';
@@ -299,6 +363,7 @@ function getSearchText(word) {
     word.example3Speak,
     word.partOfSpeech,
     word.definition,
+    word.chinese,
     word.example,
     word.example2,
     word.example3
@@ -306,6 +371,9 @@ function getSearchText(word) {
 }
 
 function applyFilters() {
+  playFilteredStopRequested = true;
+  speechSynthesis.cancel();
+  currentPlayingWordId = null;
   const searchText = document
     .getElementById("searchInput")
     .value
@@ -467,6 +535,7 @@ function escapeForSpeech(text) {
 }
 
 function speakText(text) {
+  playFilteredStopRequested = true;
   const speed = Number(document.getElementById("speedSelect").value);
 
   const utterance = new SpeechSynthesisUtterance(text);
@@ -493,8 +562,79 @@ function speakWithPause(texts, index = 0) {
 }
 
 function speakVerbForms(base, past, pp) {
+  playFilteredStopRequested = true;
   speechSynthesis.cancel();
   speakWithPause([base, past, pp]);
+}
+
+
+function speakWordPromise(text) {
+  return new Promise(resolve => {
+    const speed = Number(document.getElementById("speedSelect").value);
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "en-US";
+    utterance.rate = speed;
+    utterance.onend = resolve;
+    utterance.onerror = resolve;
+    speechSynthesis.speak(utterance);
+  });
+}
+
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function renderPageForWordIndex(index) {
+  currentPage = Math.floor(index / wordsPerPage) + 1;
+  renderWords();
+}
+
+function scrollToPlayingWord(wordId) {
+  const card = document.querySelector(`[data-word-id="${CSS.escape(wordId)}"]`);
+  if (card) {
+    card.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+async function playFilteredWords() {
+  if (filteredWords.length === 0) return;
+
+  playFilteredStopRequested = false;
+  isRandomMode = false;
+  isQuizMode = false;
+  speechSynthesis.cancel();
+
+  for (let i = 0; i < filteredWords.length; i++) {
+    if (playFilteredStopRequested) break;
+
+    const word = filteredWords[i];
+    const wordId = getFavoriteId(word);
+    currentPlayingWordId = wordId;
+
+    renderPageForWordIndex(i);
+    await wait(80);
+    scrollToPlayingWord(wordId);
+
+    const text = getSpeechText(word.speak || word.word || "");
+    if (text) {
+      for (let repeat = 0; repeat < 3; repeat++) {
+        if (playFilteredStopRequested) break;
+        await speakWordPromise(text);
+        await wait(180);
+      }
+      await wait(250);
+    }
+  }
+
+  currentPlayingWordId = null;
+  renderWords();
+}
+
+function stopPlayFilteredWords() {
+  playFilteredStopRequested = true;
+  speechSynthesis.cancel();
+  currentPlayingWordId = null;
+  renderCurrentView();
 }
 
 function startQuizMode() {
@@ -629,6 +769,10 @@ document.getElementById("favoritesBtn").addEventListener("click", () => {
 
 document.getElementById("randomBtn").addEventListener("click", showRandomWord);
 document.getElementById("quizBtn").addEventListener("click", startQuizMode);
+document.getElementById("showAllChineseBtn").addEventListener("click", () => setAllChineseVisibility(true));
+document.getElementById("hideAllChineseBtn").addEventListener("click", () => setAllChineseVisibility(false));
+document.getElementById("playFilteredBtn").addEventListener("click", playFilteredWords);
+document.getElementById("stopPlayBtn").addEventListener("click", stopPlayFilteredWords);
 
 document.getElementById("clearBtn").addEventListener("click", () => {
   document.getElementById("searchInput").value = "";

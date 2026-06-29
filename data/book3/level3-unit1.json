@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "level3-unit1-001-biologist",
     "book": "Learning Level 3",
@@ -9,7 +9,8 @@
     "ipa": "/baɪˈɑːlədʒɪst/",
     "partOfSpeech": "noun",
     "definition": "a biologist is a scientist who studies living things like plants and animals",
-    "example": "As a biologist, Mohamed is mostly interested in human genes."
+    "example": "As a biologist, Mohamed is mostly interested in human genes.",
+    "chinese": "生物學家"
   },
   {
     "id": "level3-unit1-002-access",
@@ -21,7 +22,8 @@
     "ipa": "/ˈækses/",
     "partOfSpeech": "noun",
     "definition": "access to something is permission to use it",
-    "example": "The price includes access to various online resources."
+    "example": "The price includes access to various online resources.",
+    "chinese": "使用權；進入權"
   },
   {
     "id": "level3-unit1-003-particularly",
@@ -33,7 +35,8 @@
     "ipa": "/pə(r)ˈtɪkjələ(r)li/",
     "partOfSpeech": "adverb",
     "definition": "particularly means more than usual or especially",
-    "example": "I was particularly impressed by Prof. Lacquet’s class today."
+    "example": "I was particularly impressed by Prof. Lacquet’s class today.",
+    "chinese": "特別地；尤其"
   },
   {
     "id": "level3-unit1-004-tiny",
@@ -45,7 +48,8 @@
     "ipa": "/ˈtaɪni/",
     "partOfSpeech": "adjective",
     "definition": "something that is tiny is very, very small",
-    "example": "The baby’s hands are tiny."
+    "example": "The baby’s hands are tiny.",
+    "chinese": "微小的"
   },
   {
     "id": "level3-unit1-005-scientist",
@@ -57,7 +61,8 @@
     "ipa": "/ˈsaɪəntɪst/",
     "partOfSpeech": "noun",
     "definition": "a scientist is a person who studies or works in science",
-    "example": "Albert Einstein was a famous scientist."
+    "example": "Albert Einstein was a famous scientist.",
+    "chinese": "科學家"
   },
   {
     "id": "level3-unit1-006-author",
@@ -69,7 +74,8 @@
     "ipa": "/ˈɔːθə(r)/",
     "partOfSpeech": "noun",
     "definition": "an author is a person who writes books",
-    "example": "Burton wants to be an author and write novels."
+    "example": "Burton wants to be an author and write novels.",
+    "chinese": "作者"
   },
   {
     "id": "level3-unit1-007-marine-biologist",
@@ -81,7 +87,8 @@
     "ipa": "/məˈriːn baɪˈɑːlədʒɪst/",
     "partOfSpeech": "noun",
     "definition": "a marine biologist is someone who studies the animals and plants that live in the ocean",
-    "example": "Kenshin is a marine biologist and is studying whales in South America."
+    "example": "Kenshin is a marine biologist and is studying whales in South America.",
+    "chinese": "海洋生物學家"
   },
   {
     "id": "level3-unit1-008-explore",
@@ -93,7 +100,8 @@
     "ipa": "/ɪkˈsplɔː(r)/",
     "partOfSpeech": "verb",
     "definition": "if you explore a topic, you study it carefully to try to understand more about it",
-    "example": "I’d like to explore more about how to write a good essay."
+    "example": "I’d like to explore more about how to write a good essay.",
+    "chinese": "探索；研究"
   },
   {
     "id": "level3-unit1-009-salmon",
@@ -105,7 +113,8 @@
     "ipa": "/ˈsæmən/",
     "partOfSpeech": "noun",
     "definition": "salmon is a type of fish that is pink",
-    "example": "Salmon is the most delicious fish and is healthy as well."
+    "example": "Salmon is the most delicious fish and is healthy as well.",
+    "chinese": "鮭魚"
   },
   {
     "id": "level3-unit1-010-cause",
@@ -117,7 +126,8 @@
     "ipa": "/kɔːz/",
     "partOfSpeech": "verb",
     "definition": "if something causes something to happen, it makes it happen",
-    "example": "Be careful when using oil near a flame as it can cause a fire."
+    "example": "Be careful when using oil near a flame as it can cause a fire.",
+    "chinese": "造成；導致"
   },
   {
     "id": "level3-unit1-011-pastry",
@@ -129,7 +139,8 @@
     "ipa": "/ˈpeɪstri/",
     "partOfSpeech": "noun",
     "definition": "pastry is a food that is made from flour, water, and fat",
-    "example": "Apple pie is a popular pastry in the U.S."
+    "example": "Apple pie is a popular pastry in the U.S.",
+    "chinese": "酥皮點心；糕點"
   },
   {
     "id": "level3-unit1-012-history",
@@ -141,7 +152,8 @@
     "ipa": "/ˈhɪstri/",
     "partOfSpeech": "noun",
     "definition": "history is the study of the past and important events that happened",
-    "example": "In history today, we learned about the brothers who built the first plane."
+    "example": "In history today, we learned about the brothers who built the first plane.",
+    "chinese": "歷史"
   },
   {
     "id": "level3-unit1-013-biology",
@@ -153,7 +165,8 @@
     "ipa": "/baɪˈɑːlədʒi/",
     "partOfSpeech": "noun",
     "definition": "biology is the study of living things",
-    "example": "Jiang studies hard for biology and wants to be a doctor."
+    "example": "Jiang studies hard for biology and wants to be a doctor.",
+    "chinese": "生物學"
   },
   {
     "id": "level3-unit1-014-respond",
@@ -165,7 +178,8 @@
     "ipa": "/rɪˈspɑːnd/",
     "partOfSpeech": "verb",
     "definition": "if you respond to something, you give an answer with words or an action",
-    "example": "Graciela offered Sven a drink, but he didn’t respond."
+    "example": "Graciela offered Sven a drink, but he didn’t respond.",
+    "chinese": "回應；回答"
   },
   {
     "id": "level3-unit1-015-scientific",
@@ -177,7 +191,8 @@
     "ipa": "/ˌsaɪənˈtɪfɪk/",
     "partOfSpeech": "adjective",
     "definition": "something that is scientific is connected to science and the studies done",
-    "example": "New scientific discoveries are being made every day."
+    "example": "New scientific discoveries are being made every day.",
+    "chinese": "科學的"
   },
   {
     "id": "level3-unit1-016-curious",
@@ -189,7 +204,8 @@
     "ipa": "/ˈkjʊrɪəs/",
     "partOfSpeech": "adjective",
     "definition": "someone who is curious asks many questions about something",
-    "example": "The children were curious during their science class."
+    "example": "The children were curious during their science class.",
+    "chinese": "好奇的"
   },
   {
     "id": "level3-unit1-017-cycle",
@@ -201,7 +217,8 @@
     "ipa": "/ˈsaɪkl/",
     "partOfSpeech": "verb",
     "definition": "if you cycle, you ride a bicycle",
-    "example": "Many people cycle rather than drive in Amsterdam."
+    "example": "Many people cycle rather than drive in Amsterdam.",
+    "chinese": "騎腳踏車"
   },
   {
     "id": "level3-unit1-018-memory",
@@ -213,7 +230,8 @@
     "ipa": "/ˈmeməri/",
     "partOfSpeech": "noun",
     "definition": "a memory is something that you remember from the past",
-    "example": "Zhong has lots of happy memories from his childhood."
+    "example": "Zhong has lots of happy memories from his childhood.",
+    "chinese": "記憶；回憶"
   },
   {
     "id": "level3-unit1-019-project",
@@ -225,7 +243,8 @@
     "ipa": "/ˈprɑːdʒekt/",
     "partOfSpeech": "noun",
     "definition": "a project is an activity with many different parts",
-    "example": "We have a group project to do in this course."
+    "example": "We have a group project to do in this course.",
+    "chinese": "專案；計畫"
   },
   {
     "id": "level3-unit1-020-affect",
@@ -237,7 +256,8 @@
     "ipa": "/əˈfekt/",
     "partOfSpeech": "verb",
     "definition": "if something affects something else, it makes it change",
-    "example": "Getting too little sleep affects Mia’s concentration."
+    "example": "Getting too little sleep affects Mia’s concentration.",
+    "chinese": "影響"
   },
   {
     "id": "level3-unit1-021-research",
@@ -249,7 +269,8 @@
     "ipa": "/rɪˈsɜː(r)tʃ/",
     "partOfSpeech": "noun",
     "definition": "research is the study of something in lots of detail",
-    "example": "Horst is still doing research for his PhD."
+    "example": "Horst is still doing research for his PhD.",
+    "chinese": "研究"
   },
   {
     "id": "level3-unit1-022-ancient",
@@ -261,7 +282,8 @@
     "ipa": "/ˈeɪnʃənt/",
     "partOfSpeech": "adjective",
     "definition": "something that is ancient is very, very old",
-    "example": "Jenna found an ancient coin in the sand on the beach."
+    "example": "Jenna found an ancient coin in the sand on the beach.",
+    "chinese": "古代的；非常古老的"
   },
   {
     "id": "level3-unit1-023-interest",
@@ -273,7 +295,8 @@
     "ipa": "/ˈɪntrəst/",
     "partOfSpeech": "noun",
     "definition": "an interest is wanting to know more about something",
-    "example": "Sasha has an interest in classical music."
+    "example": "Sasha has an interest in classical music.",
+    "chinese": "興趣"
   },
   {
     "id": "level3-unit1-024-calm",
@@ -285,7 +308,8 @@
     "ipa": "/kɑːm/",
     "partOfSpeech": "adjective",
     "definition": "somewhere that is calm is relaxing and not loud",
-    "example": "The city was calm and quiet again after the weekend’s concert."
+    "example": "The city was calm and quiet again after the weekend’s concert.",
+    "chinese": "平靜的；安靜的"
   },
   {
     "id": "level3-unit1-025-organization",
@@ -297,7 +321,8 @@
     "ipa": "/ˌɔː(r)ɡənəˈzeɪʃn/",
     "partOfSpeech": "noun",
     "definition": "an organization is an official group of people who work together to achieve a purpose",
-    "example": "The organization has raised a lot of money to help people build new homes."
+    "example": "The organization has raised a lot of money to help people build new homes.",
+    "chinese": "組織；機構"
   },
   {
     "id": "level3-unit1-026-hiking",
@@ -309,7 +334,8 @@
     "ipa": "/ˈhaɪkɪŋ/",
     "partOfSpeech": "noun",
     "definition": "if you go hiking, you go for a long walk, usually in the countryside or mountains go hiking",
-    "example": "We’re going to do some hiking this summer."
+    "example": "We’re going to do some hiking this summer.",
+    "chinese": "健行；遠足"
   },
   {
     "id": "level3-unit1-027-tropical",
@@ -321,7 +347,8 @@
     "ipa": "/ˈtrɑːpɪkl/",
     "partOfSpeech": "adjective",
     "definition": "a tropical place is somewhere that is very hot throughout the year",
-    "example": "Thailand and the Philippines are both tropical countries."
+    "example": "Thailand and the Philippines are both tropical countries.",
+    "chinese": "熱帶的"
   },
   {
     "id": "level3-unit1-028-skater",
@@ -333,7 +360,8 @@
     "ipa": "/ˈskeɪtə(r)/",
     "partOfSpeech": "noun",
     "definition": "a skater is someone who goes roller skating or ice skating",
-    "example": "The skater seemed to fly over the ice with graceful movements."
+    "example": "The skater seemed to fly over the ice with graceful movements.",
+    "chinese": "溜冰者；滑冰者"
   },
   {
     "id": "level3-unit1-029-change",
@@ -345,7 +373,8 @@
     "ipa": "/tʃeɪndʒ/",
     "partOfSpeech": "noun",
     "definition": "a change is a new experience of something you haven’t done or seen before",
-    "example": "Amalia needed a change, so she decided to do some volunteer work."
+    "example": "Amalia needed a change, so she decided to do some volunteer work.",
+    "chinese": "改變；變化"
   },
   {
     "id": "level3-unit1-030-inspire",
@@ -357,7 +386,8 @@
     "ipa": "/ɪnˈspaɪə(r)/",
     "partOfSpeech": "verb",
     "definition": "if you inspire someone, you make them want to do something or feel that they are able to do it",
-    "example": "Léandre inspires her team to work harder."
+    "example": "Léandre inspires her team to work harder.",
+    "chinese": "鼓舞；激勵"
   },
   {
     "id": "level3-unit1-031-researcher",
@@ -369,7 +399,8 @@
     "ipa": "/rɪˈsɜːrtʃə(r)/",
     "partOfSpeech": "noun",
     "definition": "a researcher is someone who studies a topic very carefully and in detail, usually to solve a problem",
-    "example": "The researcher is studying how people learn to speak different languages."
+    "example": "The researcher is studying how people learn to speak different languages.",
+    "chinese": "研究員"
   },
   {
     "id": "level3-unit1-032-rare",
@@ -381,7 +412,8 @@
     "ipa": "/re(r)/",
     "partOfSpeech": "adjective",
     "definition": "something that is rare is very unusual or uncommon",
-    "example": "That bird is very rare in this country."
+    "example": "That bird is very rare in this country.",
+    "chinese": "稀有的；少見的"
   },
   {
     "id": "level3-unit1-033-have-access-to",
@@ -393,7 +425,8 @@
     "ipa": "/hæv ˈækses tu:/",
     "partOfSpeech": "phrasal verb",
     "definition": "if you have access to something, you are able to use it",
-    "example": "Does the apartment have access to a garden?"
+    "example": "Does the apartment have access to a garden?",
+    "chinese": "可以使用；可以取得"
   },
   {
     "id": "level3-unit1-034-detective",
@@ -405,7 +438,8 @@
     "ipa": "/dɪˈtektɪv/",
     "partOfSpeech": "noun",
     "definition": "a detective is a police officer who investigates the truth about a crime",
-    "example": "An experienced detective was assigned to the case."
+    "example": "An experienced detective was assigned to the case.",
+    "chinese": "偵探"
   },
   {
     "id": "level3-unit1-035-skim",
@@ -417,7 +451,8 @@
     "ipa": "/skɪm/",
     "partOfSpeech": "verb",
     "definition": "if you skim something, you read through it quickly and not in detail",
-    "example": "It took Joe five minutes to skim through the whole book."
+    "example": "It took Joe five minutes to skim through the whole book.",
+    "chinese": "略讀；快速瀏覽"
   },
   {
     "id": "level3-unit1-036-habit",
@@ -429,7 +464,8 @@
     "ipa": "/ˈhæbɪt/",
     "partOfSpeech": "noun",
     "definition": "a habit is something you do often without thinking about it",
-    "example": "Exercising every day is a good habit."
+    "example": "Exercising every day is a good habit.",
+    "chinese": "習慣"
   },
   {
     "id": "level3-unit1-037-personality",
@@ -441,7 +477,8 @@
     "ipa": "/ˌpɜː(r)səˈnæləti/",
     "partOfSpeech": "noun",
     "definition": "your personality is all of the qualities that make you different from other people",
-    "example": "Alva has a very positive personality."
+    "example": "Alva has a very positive personality.",
+    "chinese": "個性；人格"
   },
   {
     "id": "level3-unit1-038-opinion",
@@ -453,7 +490,8 @@
     "ipa": "/əˈpɪnjən/",
     "partOfSpeech": "noun",
     "definition": "an opinion is what you think about something or someone",
-    "example": "Ronaldo has a good opinion of Paula and thinks that she’s a nice person."
+    "example": "Ronaldo has a good opinion of Paula and thinks that she’s a nice person.",
+    "chinese": "意見；看法"
   },
   {
     "id": "level3-unit1-039-strategy",
@@ -465,7 +503,8 @@
     "ipa": "/ˈstrætəʤi/",
     "partOfSpeech": "noun",
     "definition": "a strategy is an organized plan to do something",
-    "example": "The football team won the game because they had a good strategy."
+    "example": "The football team won the game because they had a good strategy.",
+    "chinese": "策略；方法"
   },
   {
     "id": "level3-unit1-040-profile",
@@ -477,7 +516,8 @@
     "ipa": "/ˈprəʊfaɪl/",
     "partOfSpeech": "noun",
     "definition": "a profile is a short description of someone",
-    "example": "Jihoon’s profile on Facebook says he loves playing football."
+    "example": "Jihoon’s profile on Facebook says he loves playing football.",
+    "chinese": "簡介；個人資料"
   },
   {
     "id": "level3-unit1-041-connection",
@@ -489,7 +529,8 @@
     "ipa": "/kəˈnekʃn/",
     "partOfSpeech": "noun",
     "definition": "a connection is a link between things",
-    "example": "There is a connection between the two people as they have the same surname."
+    "example": "There is a connection between the two people as they have the same surname.",
+    "chinese": "連結；關係"
   },
   {
     "id": "level3-unit1-042-reason",
@@ -501,7 +542,8 @@
     "ipa": "/ˈriːzn/",
     "partOfSpeech": "noun",
     "definition": "a reason is a fact that explains why something is how it is",
-    "example": "Remember to give a reason for your answer."
+    "example": "Remember to give a reason for your answer.",
+    "chinese": "原因；理由"
   },
   {
     "id": "level3-unit1-043-friendly",
@@ -513,7 +555,8 @@
     "ipa": "/ˈfrendli/",
     "partOfSpeech": "adjective",
     "definition": "a person who is friendly is kind and pleasant to other people",
-    "example": "Gemma is a friendly person who visits everyone."
+    "example": "Gemma is a friendly person who visits everyone.",
+    "chinese": "友善的"
   },
   {
     "id": "level3-unit1-044-wildlife",
@@ -525,7 +568,8 @@
     "ipa": "/ˈwaɪldˌlaɪf/",
     "partOfSpeech": "noun",
     "definition": "wildlife is the animals, birds, and plants that live free from people",
-    "example": "We saw so much wildlife when we went hiking in Kenya."
+    "example": "We saw so much wildlife when we went hiking in Kenya.",
+    "chinese": "野生動植物"
   },
   {
     "id": "level3-unit1-045-spend-time",
@@ -537,7 +581,8 @@
     "ipa": "/ˈspend taɪm/",
     "partOfSpeech": "phrase",
     "definition": "if you say you spend time doing something, you use your time to do it",
-    "example": "I like to spend my time painting pictures of the mountains near my house."
+    "example": "I like to spend my time painting pictures of the mountains near my house.",
+    "chinese": "花時間"
   },
   {
     "id": "level3-unit1-046-phrase",
@@ -549,7 +594,8 @@
     "ipa": "/ˈfreɪz/",
     "partOfSpeech": "noun",
     "definition": "a phrase is a group of words that are part of a sentence but don’t have a subject and a verb",
-    "example": "Zhu learned a new phrase while reading the story."
+    "example": "Zhu learned a new phrase while reading the story.",
+    "chinese": "片語；短語"
   },
   {
     "id": "level3-unit1-047-purpose",
@@ -561,7 +607,8 @@
     "ipa": "/ˈpɜː(r)pəs/",
     "partOfSpeech": "noun",
     "definition": "the purpose of something is the reason for it",
-    "example": "The main purpose of the company is to print textbooks."
+    "example": "The main purpose of the company is to print textbooks.",
+    "chinese": "目的"
   },
   {
     "id": "level3-unit1-048-get-to-know",
@@ -573,7 +620,8 @@
     "ipa": "/get tuː nəʊ/",
     "partOfSpeech": "phrasal verb",
     "definition": "if you get to know someone, you learn about them by spending time with them",
-    "example": "Anton and Beatriz are trying to get to know their new neighbor."
+    "example": "Anton and Beatriz are trying to get to know their new neighbor.",
+    "chinese": "逐漸認識；了解"
   },
   {
     "id": "level3-unit1-049-judge",
@@ -585,7 +633,8 @@
     "ipa": "/ˈʤʌʤ/",
     "partOfSpeech": "verb",
     "definition": "if you judge something, you think about it carefully and decide how you feel",
-    "example": "Athena was asked to judge the singing competition and choose a winner."
+    "example": "Athena was asked to judge the singing competition and choose a winner.",
+    "chinese": "判斷；評斷"
   },
   {
     "id": "level3-unit1-050-tend",
@@ -597,7 +646,8 @@
     "ipa": "/tend/",
     "partOfSpeech": "verb",
     "definition": "if you tend to do something, you usually do it",
-    "example": "Adam tends to fall asleep in front of the TV in the evening."
+    "example": "Adam tends to fall asleep in front of the TV in the evening.",
+    "chinese": "傾向於；通常會"
   },
   {
     "id": "level3-unit1-051-usual",
@@ -609,7 +659,8 @@
     "ipa": "/ˈjuːʒʊəl/",
     "partOfSpeech": "adjective",
     "definition": "something that is usual is normal or common",
-    "example": "It took Aleksi longer than usual to drive to work this morning."
+    "example": "It took Aleksi longer than usual to drive to work this morning.",
+    "chinese": "平常的；通常的"
   },
   {
     "id": "level3-unit1-052-express",
@@ -621,7 +672,8 @@
     "ipa": "/ɪkˈspres/",
     "partOfSpeech": "verb",
     "definition": "if you express something, you say what you think or feel about it",
-    "example": "Meredith’s wide smile expressed her happiness."
+    "example": "Meredith’s wide smile expressed her happiness.",
+    "chinese": "表達"
   },
   {
     "id": "level3-unit1-053-aspect",
@@ -633,7 +685,8 @@
     "ipa": "/ˈæspekt/",
     "partOfSpeech": "noun",
     "definition": "an aspect of something is a part of it",
-    "example": "The training program covers every aspect of the job."
+    "example": "The training program covers every aspect of the job.",
+    "chinese": "方面；層面"
   },
   {
     "id": "level3-unit1-054-blog-post",
@@ -645,7 +698,8 @@
     "ipa": "/blɑːg pəʊst/",
     "partOfSpeech": "noun",
     "definition": "a blog post is a story or a piece of writing that someone puts onto the internet for other people to read",
-    "example": "Bjorn tries to write a blog post every week about the places people should visit."
+    "example": "Bjorn tries to write a blog post every week about the places people should visit.",
+    "chinese": "部落格文章"
   },
   {
     "id": "level3-unit1-055-social-media",
@@ -657,7 +711,8 @@
     "ipa": "/ˈsəʊʃl ˈmiːdiə/",
     "partOfSpeech": "noun",
     "definition": "social media are websites or apps that people use to make friends and keep in contact with each other",
-    "example": "Alberto likes using social media sites like Instagram and TikTok."
+    "example": "Alberto likes using social media sites like Instagram and TikTok.",
+    "chinese": "社群媒體"
   },
   {
     "id": "level3-unit1-056-factual",
@@ -669,7 +724,8 @@
     "ipa": "/ˈfækʧʊəl/",
     "partOfSpeech": "adjective",
     "definition": "something that is factual has information that includes only facts",
-    "example": "Newspaper articles should be factual."
+    "example": "Newspaper articles should be factual.",
+    "chinese": "事實的；根據事實的"
   },
   {
     "id": "level3-unit1-057-aisle",
@@ -681,7 +737,8 @@
     "ipa": "/aɪl/",
     "partOfSpeech": "noun",
     "definition": "an aisle is a space to walk between rows of seats",
-    "example": "You walk down the aisle to get to your seat on a bus, train, or plane."
+    "example": "You walk down the aisle to get to your seat on a bus, train, or plane.",
+    "chinese": "走道；通道"
   },
   {
     "id": "level3-unit1-058-topic",
@@ -693,7 +750,8 @@
     "ipa": "/ˈtɑːpɪk/",
     "partOfSpeech": "noun",
     "definition": "a topic is a subject that you write or talk about",
-    "example": "We need to think more carefully about this topic before writing the essay."
+    "example": "We need to think more carefully about this topic before writing the essay.",
+    "chinese": "主題；話題"
   },
   {
     "id": "level3-unit1-059-common",
@@ -705,7 +763,8 @@
     "ipa": "/ˈkɑːmən/",
     "partOfSpeech": "adjective",
     "definition": "something that is common happens often or is in large numbers",
-    "example": "Snow is common in Canada during the winter."
+    "example": "Snow is common in Canada during the winter.",
+    "chinese": "常見的；普遍的"
   },
   {
     "id": "level3-unit1-060-review",
@@ -717,7 +776,8 @@
     "ipa": "/rɪˈvjuː/",
     "partOfSpeech": "noun",
     "definition": "a review is an article in a newspaper or magazine, or online, that says a book, movie, play, game, etc. is good or bad",
-    "example": "The review was so positive that I wanted to read the book."
+    "example": "The review was so positive that I wanted to read the book.",
+    "chinese": "評論；評價"
   },
   {
     "id": "level3-unit1-061-idea",
@@ -729,7 +789,8 @@
     "ipa": "/aɪˈdiːə/",
     "partOfSpeech": "noun",
     "definition": "an idea is a thought or a picture of something you have in your mind",
-    "example": "The surprise party was Niamh’s idea."
+    "example": "The surprise party was Niamh’s idea.",
+    "chinese": "想法；主意"
   },
   {
     "id": "level3-unit1-062-suggest",
@@ -741,7 +802,8 @@
     "ipa": "/səˈʤest/",
     "partOfSpeech": "verb",
     "definition": "if you suggest something, you offer an idea for people to think about",
-    "example": "I suggest you take a taxi to the museum this afternoon."
+    "example": "I suggest you take a taxi to the museum this afternoon.",
+    "chinese": "建議"
   },
   {
     "id": "level3-unit1-063-character",
@@ -753,7 +815,8 @@
     "ipa": "/ˈkærəktə(r)/",
     "partOfSpeech": "noun",
     "definition": "your character is all the things that make you different from others",
-    "example": "His character is a mix of kindness and friendliness."
+    "example": "His character is a mix of kindness and friendliness.",
+    "chinese": "性格；特質；角色"
   },
   {
     "id": "level3-unit1-064-dna",
@@ -765,7 +828,8 @@
     "ipa": "/diː en eɪ/",
     "partOfSpeech": "noun",
     "definition": "your DNA is the tiny things in your body that contain information about you",
-    "example": "Scientists are trying to use DNA to grow some animals in labs."
+    "example": "Scientists are trying to use DNA to grow some animals in labs.",
+    "chinese": "去氧核糖核酸；基因資訊"
   },
   {
     "id": "level3-unit1-065-experience",
@@ -777,7 +841,8 @@
     "ipa": "/ɪkˈspɪriəns/",
     "partOfSpeech": "noun",
     "definition": "an experience is something that you take part in",
-    "example": "Going overseas as a child was a great experience."
+    "example": "Going overseas as a child was a great experience.",
+    "chinese": "經驗；體驗"
   },
   {
     "id": "level3-unit1-066-psychologist",
@@ -789,7 +854,8 @@
     "ipa": "/saɪˈkɑːləʤɪst/",
     "partOfSpeech": "noun",
     "definition": "a psychologist is a person whose job is to study how people’s minds work",
-    "example": "Vicente is studying to be a psychologist because he likes helping people."
+    "example": "Vicente is studying to be a psychologist because he likes helping people.",
+    "chinese": "心理學家"
   },
   {
     "id": "level3-unit1-067-similar",
@@ -801,7 +867,8 @@
     "ipa": "/ˈsɪmələ(r)/",
     "partOfSpeech": "adjective",
     "definition": "something that is similar is nearly the same as something else",
-    "example": "Laurie and Laura have similar names."
+    "example": "Laurie and Laura have similar names.",
+    "chinese": "相似的"
   },
   {
     "id": "level3-unit1-068-believe",
@@ -813,7 +880,8 @@
     "ipa": "/bɪˈliːv/",
     "partOfSpeech": "verb",
     "definition": "if you believe something, you think it is true",
-    "example": "Matthias believes that the people around him are good."
+    "example": "Matthias believes that the people around him are good.",
+    "chinese": "相信；認為"
   },
   {
     "id": "level3-unit1-069-leader",
@@ -825,7 +893,8 @@
     "ipa": "/ˈliːdə(r)/",
     "partOfSpeech": "noun",
     "definition": "a leader is a person who tells a group of people what to do",
-    "example": "The leader told the group what they needed to do in their new job."
+    "example": "The leader told the group what they needed to do in their new job.",
+    "chinese": "領導者"
   },
   {
     "id": "level3-unit1-070-behavior",
@@ -837,7 +906,8 @@
     "ipa": "/bɪˈheɪvjə(r)/",
     "partOfSpeech": "noun",
     "definition": "your behavior is the way you do things",
-    "example": "Saadiyah’s behavior in class is always very good."
+    "example": "Saadiyah’s behavior in class is always very good.",
+    "chinese": "行為"
   },
   {
     "id": "level3-unit1-071-relationship",
@@ -849,7 +919,8 @@
     "ipa": "/rɪˈleɪʃnʃɪp/",
     "partOfSpeech": "noun",
     "definition": "a relationship is how two or more people are connected to each other",
-    "example": "Hussein and Sumaiyah have a close relationship as brother and sister."
+    "example": "Hussein and Sumaiyah have a close relationship as brother and sister.",
+    "chinese": "關係"
   },
   {
     "id": "level3-unit1-072-choice",
@@ -861,7 +932,8 @@
     "ipa": "/ʧɔɪs/",
     "partOfSpeech": "noun",
     "definition": "a choice is when you choose between two things",
-    "example": "Your choice of clothing today is great."
+    "example": "Your choice of clothing today is great.",
+    "chinese": "選擇"
   },
   {
     "id": "level3-unit1-073-extrovert",
@@ -873,7 +945,8 @@
     "ipa": "/ˈekstrəˌvɜː(r)t/",
     "partOfSpeech": "noun",
     "definition": "an extrovert is someone who prefers being with other people",
-    "example": "Valentina is an extrovert. She talks to everyone."
+    "example": "Valentina is an extrovert. She talks to everyone.",
+    "chinese": "外向的人"
   },
   {
     "id": "level3-unit1-074-introvert",
@@ -885,7 +958,8 @@
     "ipa": "/ˈɪntrəˌvɜː(r)t/",
     "partOfSpeech": "noun",
     "definition": "an introvert is someone who prefers being on their own",
-    "example": "Cruz is an introvert. He is shy with people he doesn’t know well."
+    "example": "Cruz is an introvert. He is shy with people he doesn’t know well.",
+    "chinese": "內向的人"
   },
   {
     "id": "level3-unit1-075-quiet",
@@ -897,7 +971,8 @@
     "ipa": "/ˈkwaɪət/",
     "partOfSpeech": "adjective",
     "definition": "someone who is quiet talks very little around people",
-    "example": "Yaseen is a rather quiet person who doesn’t like to talk much."
+    "example": "Yaseen is a rather quiet person who doesn’t like to talk much.",
+    "chinese": "安靜的"
   },
   {
     "id": "level3-unit1-076-observe",
@@ -909,7 +984,8 @@
     "ipa": "/əbˈzɜː(r)v/",
     "partOfSpeech": "verb",
     "definition": "if you observe something, you watch it",
-    "example": "Marcel likes to observe people around him."
+    "example": "Marcel likes to observe people around him.",
+    "chinese": "觀察"
   },
   {
     "id": "level3-unit1-077-center-of-attention",
@@ -921,7 +997,8 @@
     "ipa": "/ˈsentər əv əˈtenʃn/",
     "partOfSpeech": "phrase",
     "definition": "if you say that someone is the center of attention, you mean that everyone around them are watching them",
-    "example": "Marielana loves to be the center of attention at parties."
+    "example": "Marielana loves to be the center of attention at parties.",
+    "chinese": "眾人注目的焦點"
   },
   {
     "id": "level3-unit1-078-infographic",
@@ -933,7 +1010,8 @@
     "ipa": "/ˌɪnfəʊˈɡræfɪk/",
     "partOfSpeech": "noun",
     "definition": "an infographic is a picture that gives information",
-    "example": "The infographic makes it easier to understand the information about personalities."
+    "example": "The infographic makes it easier to understand the information about personalities.",
+    "chinese": "資訊圖表"
   },
   {
     "id": "level3-unit1-079-go-for-walks",
@@ -945,7 +1023,8 @@
     "ipa": "/ˈgəʊ fɔːr wɔːks/",
     "partOfSpeech": "phrase",
     "definition": "if you say you go for walks, you mean you spend time walking for exercise or to relax",
-    "example": "Katyrzyna and Ewa like to go for walks in the park."
+    "example": "Katyrzyna and Ewa like to go for walks in the park.",
+    "chinese": "去散步"
   },
   {
     "id": "level3-unit1-080-occasionally",
@@ -957,7 +1036,8 @@
     "ipa": "/əˈkeɪʒnəli/",
     "partOfSpeech": "adverb",
     "definition": "if something happens occasionally, it happens sometimes",
-    "example": "Kathy occasionally goes to the movies alone."
+    "example": "Kathy occasionally goes to the movies alone.",
+    "chinese": "偶爾"
   },
   {
     "id": "level3-unit1-081-rarely",
@@ -969,7 +1049,8 @@
     "ipa": "/ˈrerli/",
     "partOfSpeech": "adverb",
     "definition": "if something happens rarely, it does not happen often",
-    "example": "Marek rarely eats dinner at restaurants."
+    "example": "Marek rarely eats dinner at restaurants.",
+    "chinese": "很少；難得"
   },
   {
     "id": "level3-unit1-082-regular",
@@ -981,7 +1062,8 @@
     "ipa": "/ˈregjələr/",
     "partOfSpeech": "adjective",
     "definition": "something that is regular happens often",
-    "example": "The store has a lot of regular customers who shop there every day."
+    "example": "The store has a lot of regular customers who shop there every day.",
+    "chinese": "規律的；定期的"
   },
   {
     "id": "level3-unit1-083-exercise",
@@ -993,7 +1075,8 @@
     "ipa": "/ˈeksərsaɪz/",
     "partOfSpeech": "noun",
     "definition": "exercise is when you move your body to keep it healthy and strong",
-    "example": "Playing football is good exercise."
+    "example": "Playing football is good exercise.",
+    "chinese": "運動；練習"
   },
   {
     "id": "level3-unit1-084-description",
@@ -1005,7 +1088,8 @@
     "ipa": "/dɪˈskrɪpʃn/",
     "partOfSpeech": "noun",
     "definition": "a description is information or details about what a person is like",
-    "example": "Lin wrote a short description about himself."
+    "example": "Lin wrote a short description about himself.",
+    "chinese": "描述；說明"
   },
   {
     "id": "level3-unit1-085-specific",
@@ -1017,7 +1101,8 @@
     "ipa": "/spəˈsɪfɪk/",
     "partOfSpeech": "adjective",
     "definition": "something that is specific refers to one person or thing",
-    "example": "Try to be as specific as possible when you ask a question."
+    "example": "Try to be as specific as possible when you ask a question.",
+    "chinese": "特定的；明確的"
   },
   {
     "id": "level3-unit1-086-gym",
@@ -1029,7 +1114,8 @@
     "ipa": "/ʤɪm/",
     "partOfSpeech": "noun",
     "definition": "a gym is a place where you can go to do exercise",
-    "example": "Maja loves to use the running machines at the gym."
+    "example": "Maja loves to use the running machines at the gym.",
+    "chinese": "健身房"
   },
   {
     "id": "level3-unit1-087-traffic",
@@ -1041,7 +1127,8 @@
     "ipa": "/ˈtræfɪk/",
     "partOfSpeech": "noun",
     "definition": "traffic is the amount of vehicles on the road",
-    "example": "There was so much traffic after work that it took Leanne one hour to get home."
+    "example": "There was so much traffic after work that it took Leanne one hour to get home.",
+    "chinese": "交通；車流"
   },
   {
     "id": "level3-unit1-088-yoga",
@@ -1053,7 +1140,8 @@
     "ipa": "/ˈjəʊgə/",
     "partOfSpeech": "noun",
     "definition": "yoga is a type of exercise that helps you stretch your muscles and breathe",
-    "example": "Ida goes to yoga classes every day to relax."
+    "example": "Ida goes to yoga classes every day to relax.",
+    "chinese": "瑜伽"
   },
   {
     "id": "level3-unit1-089-expect",
@@ -1065,7 +1153,8 @@
     "ipa": "/ɪksˈpekt/",
     "partOfSpeech": "verb",
     "definition": "if you expect something, you think it will happen",
-    "example": "I expect Jan to get home at 6 p.m."
+    "example": "I expect Jan to get home at 6 p.m.",
+    "chinese": "預期；期待"
   },
   {
     "id": "level3-unit1-090-terrible",
@@ -1077,7 +1166,8 @@
     "ipa": "/ˈterəbl/",
     "partOfSpeech": "adjective",
     "definition": "something that is terrible is very bad",
-    "example": "Jiro had a terrible dream last night that upset him."
+    "example": "Jiro had a terrible dream last night that upset him.",
+    "chinese": "糟糕的；可怕的"
   },
   {
     "id": "level3-unit1-091-eat-out",
@@ -1089,7 +1179,8 @@
     "ipa": "/ˈiːt aʊt/",
     "partOfSpeech": "phrasal verb",
     "definition": "if you eat out, you eat in a restaurant",
-    "example": "Rosa and her family often eat out at restaurants."
+    "example": "Rosa and her family often eat out at restaurants.",
+    "chinese": "外出用餐"
   },
   {
     "id": "level3-unit1-092-get-up",
@@ -1101,7 +1192,8 @@
     "ipa": "/ˈget ʌp/",
     "partOfSpeech": "phrasal verb",
     "definition": "if you get up, you leave your bed after sleeping",
-    "example": "I usually get up at 5:00 a.m. during the week so I can get to work by 7:00 a.m."
+    "example": "I usually get up at 5:00 a.m. during the week so I can get to work by 7:00 a.m.",
+    "chinese": "起床"
   },
   {
     "id": "level3-unit1-093-characteristic",
@@ -1113,7 +1205,8 @@
     "ipa": "/ˌkærəktəˈrɪstɪk/",
     "partOfSpeech": "noun",
     "definition": "a characteristic is a common or special quality of a person, group, action, or thing",
-    "example": "Being friendly is a good characteristic."
+    "example": "Being friendly is a good characteristic.",
+    "chinese": "特徵；特點"
   },
   {
     "id": "level3-unit1-094-option",
@@ -1125,7 +1218,8 @@
     "ipa": "/ˈɑːpʃn/",
     "partOfSpeech": "noun",
     "definition": "an option is something that you can choose",
-    "example": "Traveling for a year after college is an option for Gustavo."
+    "example": "Traveling for a year after college is an option for Gustavo.",
+    "chinese": "選項；選擇"
   },
   {
     "id": "level3-unit1-095-best-self",
@@ -1137,7 +1231,8 @@
     "ipa": "/ˈbest self/",
     "partOfSpeech": "phrase",
     "definition": "if you say you are your best self, you mean you are getting the most out of life",
-    "example": "Melania feels she is her best self when she is with her friends."
+    "example": "Melania feels she is her best self when she is with her friends.",
+    "chinese": "最好的自己"
   },
   {
     "id": "level3-unit1-096-situation",
@@ -1149,7 +1244,8 @@
     "ipa": "/ˌsɪtʃuˈeɪʃn/",
     "partOfSpeech": "noun",
     "definition": "a situation is what is happening in a place at a specific time",
-    "example": "Elaine thought the situation was funny."
+    "example": "Elaine thought the situation was funny.",
+    "chinese": "情況；狀況"
   },
   {
     "id": "level3-unit1-097-interviewer",
@@ -1161,7 +1257,8 @@
     "ipa": "/ˈɪntərvjuːər/",
     "partOfSpeech": "noun",
     "definition": "an interviewer is a person who asks questions to find out more about someone",
-    "example": "The interviewer asked Aino many questions."
+    "example": "The interviewer asked Aino many questions.",
+    "chinese": "面試官；訪問者"
   },
   {
     "id": "level3-unit1-098-expression",
@@ -1173,7 +1270,8 @@
     "ipa": "/ɪkˈspreʃn/",
     "partOfSpeech": "noun",
     "definition": "an expression is the act of telling or showing thoughts or feelings",
-    "example": "Everyone gave an expression of agreement at the meeting."
+    "example": "Everyone gave an expression of agreement at the meeting.",
+    "chinese": "表達；表情"
   },
   {
     "id": "level3-unit1-099-introduce",
@@ -1185,7 +1283,8 @@
     "ipa": "/ˌɪntrəˈduːs/",
     "partOfSpeech": "verb",
     "definition": "if you introduce someone to another person, you tell that other person about the first person",
-    "example": "Let me introduce you to Raj."
+    "example": "Let me introduce you to Raj.",
+    "chinese": "介紹"
   },
   {
     "id": "level3-unit1-100-speaker",
@@ -1197,7 +1296,8 @@
     "ipa": "/ˈspiːkə(r)/",
     "partOfSpeech": "noun",
     "definition": "a speaker is a person who is talking",
-    "example": "The speaker tonight is a well-known scientist."
+    "example": "The speaker tonight is a well-known scientist.",
+    "chinese": "說話者；演講者"
   },
   {
     "id": "level3-unit1-101-strongly",
@@ -1209,7 +1309,8 @@
     "ipa": "/ˈstrɔːŋli/",
     "partOfSpeech": "adverb",
     "definition": "something that is said strongly is said louder or slower than other words",
-    "example": "Ren said the main words in his question strongly."
+    "example": "Ren said the main words in his question strongly.",
+    "chinese": "強烈地；有力地"
   },
   {
     "id": "level3-unit1-102-comfortable",
@@ -1221,7 +1322,8 @@
     "ipa": "/ˈkʌmftəbl/",
     "partOfSpeech": "adjective",
     "definition": "a person who is comfortable feels pleasant and calm",
-    "example": "Zoltan is comfortable speaking Italian, Russian, and English."
+    "example": "Zoltan is comfortable speaking Italian, Russian, and English.",
+    "chinese": "舒服的；自在的"
   },
   {
     "id": "level3-unit1-103-confident",
@@ -1233,7 +1335,8 @@
     "ipa": "/ˈkɑːnfɪdənt/",
     "partOfSpeech": "adjective",
     "definition": "a person who is confident trusts that a situation will happen as they expect it",
-    "example": "I feel confident that we will win."
+    "example": "I feel confident that we will win.",
+    "chinese": "有信心的"
   },
   {
     "id": "level3-unit1-104-reliable",
@@ -1245,7 +1348,8 @@
     "ipa": "/rɪˈlaɪəbl/",
     "partOfSpeech": "adjective",
     "definition": "a person who is reliable always does what they say they will do",
-    "example": "Ask Marlon to help you. He’s such a reliable person."
+    "example": "Ask Marlon to help you. He’s such a reliable person.",
+    "chinese": "可靠的"
   },
   {
     "id": "level3-unit1-105-event",
@@ -1257,7 +1361,8 @@
     "ipa": "/ɪˈvent/",
     "partOfSpeech": "noun",
     "definition": "an event is a competition, party, or race that is done at a specific time",
-    "example": "Nate’s birthday was a major event each year when he was a child."
+    "example": "Nate’s birthday was a major event each year when he was a child.",
+    "chinese": "活動；事件"
   },
   {
     "id": "level3-unit1-106-excerpt",
@@ -1269,7 +1374,8 @@
     "ipa": "/ekˈsɜːrpt/",
     "partOfSpeech": "noun",
     "definition": "an excerpt is a short piece of text from a longer text",
-    "example": "Read the excerpt from the story, then answer the questions."
+    "example": "Read the excerpt from the story, then answer the questions.",
+    "chinese": "摘錄；節錄"
   },
   {
     "id": "level3-unit1-107-fit",
@@ -1281,7 +1387,8 @@
     "ipa": "/fɪt/",
     "partOfSpeech": "verb",
     "definition": "something that fits someone feels right for that person",
-    "example": "Being a doctor fits Amelia. She’s really good at it."
+    "example": "Being a doctor fits Amelia. She’s really good at it.",
+    "chinese": "適合；合身"
   },
   {
     "id": "level3-unit1-108-serious",
@@ -1293,7 +1400,8 @@
     "ipa": "/ˈsɪriəs/",
     "partOfSpeech": "adjective",
     "definition": "someone who is serious is not smiling or laughing",
-    "example": "Everyone looked serious as they listened to the president’s speech."
+    "example": "Everyone looked serious as they listened to the president’s speech.",
+    "chinese": "嚴肅的；認真的"
   },
   {
     "id": "level3-unit1-109-naturally",
@@ -1305,7 +1413,8 @@
     "ipa": "/ˈnæʧrəli/",
     "partOfSpeech": "adverb",
     "definition": "if something happens naturally, it happens with certainty or without doubt",
-    "example": "Naturally, Johann will drive us to the theater on Saturday."
+    "example": "Naturally, Johann will drive us to the theater on Saturday.",
+    "chinese": "自然地"
   },
   {
     "id": "level3-unit1-110-either",
@@ -1317,7 +1426,8 @@
     "ipa": "/ˈaɪðər/",
     "partOfSpeech": "adverb",
     "definition": "you use either to choose between two or more things",
-    "example": "Watch either movie. They’re both good!"
+    "example": "Watch either movie. They’re both good!",
+    "chinese": "也；二者之一"
   },
   {
     "id": "level3-unit1-111-these-days",
@@ -1329,7 +1439,8 @@
     "ipa": "/ðiːz deɪz/",
     "partOfSpeech": "phrase",
     "definition": "these days are the present time, over a short period",
-    "example": "Kimiko prefers reading to watching TV these days."
+    "example": "Kimiko prefers reading to watching TV these days.",
+    "chinese": "現在；近來"
   },
   {
     "id": "level3-unit1-112-definitely",
@@ -1341,7 +1452,8 @@
     "ipa": "/ˈdefɪnətli/",
     "partOfSpeech": "adverb",
     "definition": "you use definitely to show that you are very sure of something",
-    "example": "The team will definitely win if Hae-Jun plays in the game."
+    "example": "The team will definitely win if Hae-Jun plays in the game.",
+    "chinese": "絕對；肯定地"
   },
   {
     "id": "level3-unit1-113-absolutely",
@@ -1353,7 +1465,8 @@
     "ipa": "/ˈæbsəluːtli/",
     "partOfSpeech": "adverb",
     "definition": "you use absolutely to mean really, completely, or for sure",
-    "example": "Kaito didn’t sleep last night, so he’s absolutely exhausted today."
+    "example": "Kaito didn’t sleep last night, so he’s absolutely exhausted today.",
+    "chinese": "完全地；絕對地"
   },
   {
     "id": "level3-unit1-114-creative",
@@ -1365,7 +1478,8 @@
     "ipa": "/kriˈeɪtɪv/",
     "partOfSpeech": "adjective",
     "definition": "a person who is creative is good at thinking of and doing new things",
-    "example": "Sanjay is so creative with the way he uses colors in his artwork."
+    "example": "Sanjay is so creative with the way he uses colors in his artwork.",
+    "chinese": "有創意的"
   },
   {
     "id": "level3-unit1-115-honest",
@@ -1377,7 +1491,8 @@
     "ipa": "/ˈɑːnɪst/",
     "partOfSpeech": "adjective",
     "definition": "a person who is honest always tells the truth",
-    "example": "Thank you for being so honest with me."
+    "example": "Thank you for being so honest with me.",
+    "chinese": "誠實的"
   },
   {
     "id": "level3-unit1-116-patient",
@@ -1389,7 +1504,8 @@
     "ipa": "/ˈpeɪʃnt/",
     "partOfSpeech": "adjective",
     "definition": "a person who is patient is calm when they have to wait for something",
-    "example": "Tai is very patient with young children."
+    "example": "Tai is very patient with young children.",
+    "chinese": "有耐心的"
   },
   {
     "id": "level3-unit1-117-professional",
@@ -1401,7 +1517,8 @@
     "ipa": "/prəˈfeʃənl/",
     "partOfSpeech": "adjective",
     "definition": "someone who is professional does something well in a job or an activity",
-    "example": "The reporter was very professional when they interviewed Alexis."
+    "example": "The reporter was very professional when they interviewed Alexis.",
+    "chinese": "專業的"
   },
   {
     "id": "level3-unit1-118-emphasize",
@@ -1413,7 +1530,8 @@
     "ipa": "/ˈemfəsaɪz/",
     "partOfSpeech": "verb",
     "definition": "if you emphasize something, you show that it is more important than the other things",
-    "example": "Use capital letters to emphasize a word in writing."
+    "example": "Use capital letters to emphasize a word in writing.",
+    "chinese": "強調"
   },
   {
     "id": "level3-unit1-119-direct",
@@ -1425,7 +1543,8 @@
     "ipa": "/daɪˈrekt/",
     "partOfSpeech": "adjective",
     "definition": "someone who is direct says what they mean",
-    "example": "Celia is very direct, but she’s not rude."
+    "example": "Celia is very direct, but she’s not rude.",
+    "chinese": "直接的；坦率的"
   },
   {
     "id": "level3-unit1-120-crazy",
@@ -1437,7 +1556,8 @@
     "ipa": "/ˈkreɪzi/",
     "partOfSpeech": "adjective",
     "definition": "something that is crazy is strange or silly",
-    "example": "Feroz’s ideas can seem a bit crazy at times, but they usually end well."
+    "example": "Feroz’s ideas can seem a bit crazy at times, but they usually end well.",
+    "chinese": "瘋狂的；荒唐的"
   },
   {
     "id": "level3-unit1-121-easygoing",
@@ -1449,7 +1569,8 @@
     "ipa": "/ˈiːziˌgəʊɪŋ/",
     "partOfSpeech": "adjective",
     "definition": "someone who is easygoing is relaxed and does not stress easily",
-    "example": "Jia is a fun and easygoing person."
+    "example": "Jia is a fun and easygoing person.",
+    "chinese": "隨和的"
   },
   {
     "id": "level3-unit1-122-talented",
@@ -1461,7 +1582,8 @@
     "ipa": "/ˈtæləntɪd/",
     "partOfSpeech": "adjective",
     "definition": "someone who is talented is very good at something",
-    "example": "Olaf is talented at playing the piano."
+    "example": "Olaf is talented at playing the piano.",
+    "chinese": "有才華的"
   },
   {
     "id": "level3-unit1-123-graduate",
@@ -1473,7 +1595,8 @@
     "ipa": "/ˈɡrædʒuət/",
     "partOfSpeech": "verb",
     "definition": "if you graduate, you finish a qualification, like a diploma or a degree",
-    "example": "Ilan can’t wait to graduate from university."
+    "example": "Ilan can’t wait to graduate from university.",
+    "chinese": "畢業"
   },
   {
     "id": "level3-unit1-124-marketing",
@@ -1485,7 +1608,8 @@
     "ipa": "/ˈmɑːrkɪtɪŋ/",
     "partOfSpeech": "noun",
     "definition": "marketing is a job that helps to promote and sell products and services to people in marketing",
-    "example": "Juhee has many friends who work in marketing."
+    "example": "Juhee has many friends who work in marketing.",
+    "chinese": "行銷"
   },
   {
     "id": "level3-unit1-125-advertising",
@@ -1497,7 +1621,8 @@
     "ipa": "/ˈædvərtaɪzɪŋ/",
     "partOfSpeech": "noun",
     "definition": "advertising is a job of designing notices to sell products and services to people in advertising",
-    "example": "Sumit works in advertising and is good at selling things."
+    "example": "Sumit works in advertising and is good at selling things.",
+    "chinese": "廣告；廣告業"
   },
   {
     "id": "level3-unit1-126-generous",
@@ -1509,7 +1634,8 @@
     "ipa": "/ˈʤenərəs/",
     "partOfSpeech": "adjective",
     "definition": "a person who is generous is kind and gives things to other people or does things for them",
-    "example": "Granny was very generous with the amount of money she gave me this year."
+    "example": "Granny was very generous with the amount of money she gave me this year.",
+    "chinese": "慷慨的；大方的"
   },
   {
     "id": "level3-unit1-127-karate",
@@ -1521,7 +1647,8 @@
     "ipa": "/kəˈrɑːti/",
     "partOfSpeech": "noun",
     "definition": "karate is a sport or way of fighting",
-    "example": "Ricardo enjoys learning karate as it’s good exercise."
+    "example": "Ricardo enjoys learning karate as it’s good exercise.",
+    "chinese": "空手道"
   },
   {
     "id": "level3-unit1-128-join",
@@ -1533,7 +1660,8 @@
     "ipa": "/dʒɔɪn/",
     "partOfSpeech": "verb",
     "definition": "if you join someone, you meet or come together with them",
-    "example": "Join us tonight for coffee and cake."
+    "example": "Join us tonight for coffee and cake.",
+    "chinese": "加入；參加"
   },
   {
     "id": "level3-unit1-129-deal-with",
@@ -1545,7 +1673,8 @@
     "ipa": "/diːl wɪð/",
     "partOfSpeech": "phrasal verb",
     "definition": "if you deal with something, you give it your attention and solve the problem",
-    "example": "Maura needs to deal with her stress better."
+    "example": "Maura needs to deal with her stress better.",
+    "chinese": "處理；應付"
   },
   {
     "id": "level3-unit1-130-suggestion",
@@ -1557,7 +1686,8 @@
     "ipa": "/səˈdʒestʃən/",
     "partOfSpeech": "noun",
     "definition": "if you make a suggestion, you offer an idea for someone to think about make a suggestion",
-    "example": "Qiang made a great suggestion in the meeting yesterday."
+    "example": "Qiang made a great suggestion in the meeting yesterday.",
+    "chinese": "建議"
   },
   {
     "id": "level3-unit1-131-mention",
@@ -1569,7 +1699,8 @@
     "ipa": "/ˈmenʃn/",
     "partOfSpeech": "verb",
     "definition": "if you mention something, you don’t give many details about it",
-    "example": "I’ll mention your ideas to Jacinta."
+    "example": "I’ll mention your ideas to Jacinta.",
+    "chinese": "提到；提及"
   },
   {
     "id": "level3-unit1-132-stranger",
@@ -1581,7 +1712,8 @@
     "ipa": "/ˈstreɪnʤər/",
     "partOfSpeech": "noun",
     "definition": "a stranger is a person you do not know",
-    "example": "Miya spoke to a stranger while waiting for her bus."
+    "example": "Miya spoke to a stranger while waiting for her bus.",
+    "chinese": "陌生人"
   },
   {
     "id": "level3-unit1-133-show-your-interest",
@@ -1593,7 +1725,8 @@
     "ipa": "/ʃəʊ jʊr ˈɪntrəst/",
     "partOfSpeech": "phrase",
     "definition": "if you show your interest, you say that something is interesting to you",
-    "example": "Show your interest in people by listening to them."
+    "example": "Show your interest in people by listening to them.",
+    "chinese": "表現出你的興趣"
   },
   {
     "id": "level3-unit1-134-free-time",
@@ -1605,7 +1738,8 @@
     "ipa": "/friː taɪm/",
     "partOfSpeech": "phrase",
     "definition": "if you say you have free time, you mean you are not busy with anything spend (your) free time",
-    "example": "In his free time, Istvan likes to play computer games."
+    "example": "In his free time, Istvan likes to play computer games.",
+    "chinese": "空閒時間"
   },
   {
     "id": "level3-unit1-135-morning-person",
@@ -1617,7 +1751,8 @@
     "ipa": "/ˈmɔːrnɪŋ ˈpɜːrsn/",
     "partOfSpeech": "phrase",
     "definition": "if you say someone is a morning person, you mean someone works better in the mornings than the evenings",
-    "example": "Sehee is a morning person. She wakes up at 5 a.m."
+    "example": "Sehee is a morning person. She wakes up at 5 a.m.",
+    "chinese": "早起型的人；早上精神好的人"
   },
   {
     "id": "level3-unit1-136-adapt",
@@ -1629,7 +1764,8 @@
     "ipa": "/əˈdæpt/",
     "partOfSpeech": "verb",
     "definition": "if you adapt to something, you change to fit it",
-    "example": "The writer is going to adapt her book into a movie."
+    "example": "The writer is going to adapt her book into a movie.",
+    "chinese": "適應；調整"
   },
   {
     "id": "level3-unit1-137-sign-up",
@@ -1641,7 +1777,8 @@
     "ipa": "/saɪn ʌp/",
     "partOfSpeech": "phrasal verb",
     "definition": "if you sign up for something, you join it sign up to, sign up for",
-    "example": "Remember to sign up for the trip to Milan next week."
+    "example": "Remember to sign up for the trip to Milan next week.",
+    "chinese": "報名；註冊"
   },
   {
     "id": "level3-unit1-138-exchange",
@@ -1653,7 +1790,8 @@
     "ipa": "/ɪksˈʧeɪnʤ/",
     "partOfSpeech": "verb",
     "definition": "if you exchange something with someone, you give each other something",
-    "example": "Amy and Sylvie exchange presents on their birthdays."
+    "example": "Amy and Sylvie exchange presents on their birthdays.",
+    "chinese": "交換"
   },
   {
     "id": "level3-unit1-139-checklist",
@@ -1665,7 +1803,8 @@
     "ipa": "/ˈʧeklɪst/",
     "partOfSpeech": "noun",
     "definition": "a checklist is a list of things you need to do or have for something",
-    "example": "Use a checklist to make sure you’ve done everything you need to do before your vacation."
+    "example": "Use a checklist to make sure you’ve done everything you need to do before your vacation.",
+    "chinese": "檢查清單"
   },
   {
     "id": "level3-unit1-140-feedback",
@@ -1677,7 +1816,8 @@
     "ipa": "/ˈfiːdbæk/",
     "partOfSpeech": "noun",
     "definition": "feedback is what someone tells you about something you have done",
-    "example": "Elsie asked her teacher for feedback on her homework."
+    "example": "Elsie asked her teacher for feedback on her homework.",
+    "chinese": "回饋；意見"
   },
   {
     "id": "level3-unit1-141-site",
@@ -1689,7 +1829,8 @@
     "ipa": "/saɪt/",
     "partOfSpeech": "noun",
     "definition": "a site (website) is a place on the internet that has information or pictures about something",
-    "example": "Ambrocio likes to read sites with interesting facts."
+    "example": "Ambrocio likes to read sites with interesting facts.",
+    "chinese": "網站；地點"
   },
   {
     "id": "level3-unit1-142-rather-than",
@@ -1701,7 +1842,8 @@
     "ipa": "/ˈræðə(r) ðən/",
     "partOfSpeech": "phrase",
     "definition": "if you say rather than, you mean instead of",
-    "example": "He’d do anything rather than upset someone."
+    "example": "He’d do anything rather than upset someone.",
+    "chinese": "而不是"
   },
   {
     "id": "level3-unit1-143-response",
@@ -1713,7 +1855,8 @@
     "ipa": "/rɪˈspɑːns/",
     "partOfSpeech": "noun",
     "definition": "a response is a reply or answer to a question",
-    "example": "The company did not give a response to my email."
+    "example": "The company did not give a response to my email.",
+    "chinese": "回應；回答"
   },
   {
     "id": "level3-unit1-144-develop",
@@ -1725,7 +1868,8 @@
     "ipa": "/dɪˈveləp/",
     "partOfSpeech": "verb",
     "definition": "if you develop something, you create something new",
-    "example": "We are trying to develop a new way to sell this product."
+    "example": "We are trying to develop a new way to sell this product.",
+    "chinese": "發展；開發"
   },
   {
     "id": "level3-unit1-145-community",
@@ -1737,7 +1881,8 @@
     "ipa": "/kəˈmjuːnəti/",
     "partOfSpeech": "noun",
     "definition": "a community is a group of people who share a way of living, interests, jobs, etc.",
-    "example": "The community is creating a shared garden where everyone can grow vegetables."
+    "example": "The community is creating a shared garden where everyone can grow vegetables.",
+    "chinese": "社群；社區"
   },
   {
     "id": "level3-unit1-146-report",
@@ -1749,7 +1894,8 @@
     "ipa": "/rɪˈpɔːrt/",
     "partOfSpeech": "noun",
     "definition": "a report is a description of something that happens, like an event",
-    "example": "Please try to keep the report to a maximum of five pages."
+    "example": "Please try to keep the report to a maximum of five pages.",
+    "chinese": "報告"
   },
   {
     "id": "level3-unit1-147-suitable",
@@ -1761,7 +1907,8 @@
     "ipa": "/ˈsuːtəbl/",
     "partOfSpeech": "adjective",
     "definition": "something that is suitable is right for a specific purpose",
-    "example": "My apartment is in a suitable location, with many things to see and do."
+    "example": "My apartment is in a suitable location, with many things to see and do.",
+    "chinese": "合適的"
   },
   {
     "id": "level3-unit1-148-current",
@@ -1773,7 +1920,8 @@
     "ipa": "/ˈkɜːrənt/",
     "partOfSpeech": "adjective",
     "definition": "something that is current is happening at this time",
-    "example": "Siiri loves her current job."
+    "example": "Siiri loves her current job.",
+    "chinese": "目前的；現在的"
   },
   {
     "id": "level3-unit1-149-match",
@@ -1785,6 +1933,7 @@
     "ipa": "/ˈmæʧ/",
     "partOfSpeech": "verb",
     "definition": "if something matches something else, it fits well with that thing",
-    "example": "Juho’s shirt matches Laurie’s shirt today."
+    "example": "Juho’s shirt matches Laurie’s shirt today.",
+    "chinese": "相配；符合"
   }
 ]
